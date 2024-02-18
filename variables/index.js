@@ -1,0 +1,1 @@
+import *as array_1 from './array_1.js';
