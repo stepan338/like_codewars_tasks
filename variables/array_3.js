@@ -1,7 +1,7 @@
 // Напишите функцию, которая принимает массив объектов с полями "имя" и "возраст" и возвращает новый массив, состоящий только из объектов, у которых возраст больше 18 лет.
 // const initialArray = [
-  // { "name": "Viktor", "age": 24 },
-  // { "name": "Aboba", "age": 16 },
+// { "name": "Viktor", "age": 24 },
+// { "name": "Aboba", "age": 16 },
 // ]
 // const result = adultOnly(initialArray) // Реализовать эту функцию
 // console.log(result) // Выведет [{ "name": "Viktor", "age": 24 }]
@@ -24,14 +24,16 @@ const initialArray = [
 ]
 
 //.filter
-let isAdultOnly3 = initialArray.filter(item => item.age> 18)
+let isAdultOnly3 = initialArray.filter(item => item.age > 18)
 console.log(isAdultOnly3);
 
 
 //.forEach and .push
 const evenArr2 = [];
-const forEachAdultOnly2 = initialArray.forEach((item) => {if (item.age > 18) {
-  evenArr2.push(item);
-  return(evenArr2);
-}});
-console.log (evenArr2)
+const forEachAdultOnly2 = initialArray.forEach((item) => {
+  if (item.age > 18) {
+    evenArr2.push(item);
+    return (evenArr2);
+  }
+});
+console.log(evenArr2)
