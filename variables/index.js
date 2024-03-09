@@ -1,1 +1,1 @@
-import *as array_8 from './array_10.js';
+import *as array_10 from './array_10.js';
